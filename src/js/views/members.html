@@ -1,0 +1,32 @@
+<!--
+ Copyright (c) 2014, 2020, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+<div class="oj-hybrid-padding">
+  <h1>Add Members</h1>
+  <!-- <oj-form-layout max-columns="1" direction="row">
+    <oj-input-text aria-label="District" value="{{district}}" placeholder="District"></oj-input-text>
+    <oj-input-text aria-label="Name" value="{{name}}" placeholder="Name"></oj-input-text>
+    <oj-button id="addMember" on-oj-action="[[addMember]]">Add</oj-button>
+  </oj-form-layout> -->
+  <oj-button id="empList" on-oj-action="[[fetchData]]">Employee List</oj-button>
+  <oj-list-view id="listview" aria-label="simple list" data="[[dataProvider]]">
+    <template slot="itemTemplate" data-oj-as="item">
+      <!-- <span class="avatar"
+        data-bind="style: { backgroundImage: 'url(\'../images/dvt/' + item.data.id + '.png\')' }"></span> -->
+      <div class="container">
+        <div>
+          <span class="name">
+            <oj-bind-text value="[[item.data.employee_name]]"></oj-bind-text>
+          </span>
+        </div>
+        <div>
+          <span class="oj-text-xs oj-text-secondary-color">
+            <oj-bind-text value="[[item.data.employee_salary]]"></oj-bind-text>
+            <oj-bind-text value="[[item.data.employee_age]]"></oj-bind-text>
+          </span>
+        </div>
+      </div>
+    </template>
+  </oj-list-view>
+</div>

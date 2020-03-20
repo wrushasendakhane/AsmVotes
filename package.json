@@ -1,0 +1,18 @@
+{
+  "name": "AsmVotes",
+  "version": "1.0.0",
+  "description": "An Oracle JavaScript Extension Toolkit(JET) web app",
+  "dependencies": {
+    "@oracle/offline-persistence-toolkit": "^1.4.0",
+    "@oracle/oraclejet": "~8.1.0",
+    "pouchdb": "^7.2.1",
+    "pouchdb-find": "^7.2.1"
+  },
+  "devDependencies": {
+    "@oracle/oraclejet-tooling": "~8.1.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "private": true
+}
